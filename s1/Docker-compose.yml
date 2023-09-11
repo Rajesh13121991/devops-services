@@ -2,17 +2,17 @@ version: "3"
 services:
   s1:
     build:
-      context: ./S1
+      context: ./s1
     ports:
       - "3001:3000"
   s2:
     build:
-      context: ./S2
+      context: ./s2
     ports:
       - "3002:3000"
   s3:
     build:
-      context: ./S3
+      context: ./s3
     ports:
       - "3003:3000"
     depends_on:
